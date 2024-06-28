@@ -1,0 +1,227 @@
+ul li {
+	list-style: none;
+}
+
+.tub {
+	margin: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.tub ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	justify-content: center;
+}
+
+.tub li img {
+	width: 100%;
+	height: 144px;
+	display: block;
+	transition: opacity 0.3s;
+	/* 平滑过渡透明度变化 */
+}
+
+.tub li {
+	width: 21%;
+	background: #111;
+	padding: 1%;
+	margin: 20px 2%;
+	float: left;
+	text-align: center;
+	color: #FFFF00 position: relative;
+	/* 使.description能够绝对定位到li */
+	overflow: hidden;
+	/* 确保描述文本不会溢出图片框 */
+}
+
+.tub li a {
+	color: #fff;
+	font-size: 18px
+}
+
+.tub li .description {
+
+	position: absolute;
+	left: 60px;
+	background: rgba(0, 0, 0, 0.5);
+	/* 半透明黑色背景 */
+	color: white;
+	padding: 10px;
+	text-align: center;
+	opacity: 0;
+	/* 默认不显示 */
+	transition: opacity 0.3s, transform 0.3s;
+	/* 平滑过渡不透明度和Y轴位置 */
+	/* transform: translateY(100%); */
+	/* 初始状态，文本在图片下方 */
+}
+
+/* 鼠标悬停在li上时，显示描述文本并降低图片的不透明度 */
+.tub li:hover .description {
+	opacity: 1;
+	/* 显示描述文本 */
+	transform: translateY(0);
+	/* 鼠标悬停时，文本显示 */
+}
+
+.tub li:hover img {
+	opacity: 0.3;
+	/* 鼠标悬停时，降低图片的不透明度 */
+}
+
+
+.main h2:after {
+	content: '';
+	display: block;
+	width: 60px;
+	border-bottom: #c53333 solid 3px;
+	position: absolute;
+	left: 50%;
+	bottom: -20px;
+	margin-left: -30px;
+}
+
+.main h2 {
+	position: relative;
+}
+
+.pad h3 {
+	/* 设置字体大小 */
+	font-size: 30px;
+	/* 你可以根据需要设置字体大小，例如使用像素(px)、点(pt)等单位 */
+
+	color: #7b1f1f;
+}
+
+.pad p {
+	/* 设置字体大小 */
+	font-size: 20px;
+	/* 设置字体颜色 */
+	color: #333;
+	/* 设置行间距（行高） */
+	line-height: 2;
+	/* 设置段落间距（外边距） */
+	margin-bottom: 20px;
+	/* 设置段落内部的间距（内边距） */
+	padding: 15px 5;
+	/* 段落内部的间距，这里设置了上下内边距为10px，没有设置左右内边距 */
+	text-align: left;
+}
+
+.main {
+	margin: 0px;
+	clear: both;
+	text-align: center;
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 12px;
+}
+
+.close:hover,
+.more:hover {
+	background: #FF6600
+}
+
+.more {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	padding: 0px 10px;
+	line-height: 40px;
+	background: #c53333;
+	color: #fff;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+
+.imglist {
+	width: 96%;
+	margin: 0 auto;
+	display: flex;
+	/* 启用Flexbox布局 */
+	justify-content: center;
+	/* 水平居中 */
+	align-items: center;
+	/* 垂直居中 */
+}
+
+.imglist li a {
+	color: #fff
+}
+
+.imglist li {
+	float: left;
+	width: 440px;
+	margin: 10px;
+	margin-top: 30px;
+	text-align: center
+}
+
+
+.back-to-top:hover {
+	background-color: #ffaa00;
+	/* 鼠标悬浮时的背景颜色 */
+}
+
+/*文章段落*/
+.pad {
+	/* padding:30px; */
+	padding-bottom: 30px;
+	padding-top: 0px;
+	display: block;
+}
+
+.right {
+	float: right;
+	width: 800px;
+	padding: 10px;
+	margin-right: 50px;
+/* 	line-height: 66px;
+	text-indent: 45px; */
+}
+
+.right p{
+	line-height: 56px;
+	text-indent: 45px; 
+}
+
+.right h2 {
+	margin: 20px 0;
+}
+
+.left {
+	float: left;
+	width: 500px;
+	margin-left: 80px;
+	padding: 10px;
+	margin-top: 10px;
+
+	/* transition: transform 0.5s ease;
+	/* 平滑过渡效果 */
+	/* transform-origin: center; */
+	/* 旋转中心点 */
+
+	display: block;
+	transition: transform 0.5s ease;
+	/* 平滑过渡效果 */
+	transform-style: preserve-3d;
+	/* 使子元素保留3D空间 */
+	transform-origin: center;
+	/* 旋转的基点为中心 */
+}
+
+.left:hover {
+	/* 旋转360度 */
+	/* transform: rotate(360deg); */
+	transform: scale(1.1) rotateY(-90deg);
+}

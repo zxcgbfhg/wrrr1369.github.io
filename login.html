@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/menu.css">
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/login.css" />
+		<title>佛冈欢迎您</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="head" id="top">
+				<div class="all">
+					<div class="logo">
+						<img src="./img/logo.png" alt="">
+					</div>
+					<div class="nav">
+
+						<ul>
+							<li><a href="index.html">佛冈首页</a></li>
+							<li></li>
+							<li><a href="culture.html">文化介绍</a></li>
+							<li></li>
+							<li><a href="#">活动资讯</a></li>
+							<li></li>
+							<li><a href="./show.html">作品展示</a></li>
+							<li></li>
+							<li><a href="#">在线教学</a></li>
+							<li></li>
+							<li><a href="./myself.html">个人首页</a></li>
+						</ul>
+					</div>
+					<div class="login">
+						<div class="welcome-message dropdown">
+							<button class="dropbtn">佛 冈 欢 迎 您 ！</button>
+							<span></span>
+
+						</div>
+						<span>
+							<a href="login.html">
+								<font color="white">登录</font>
+							</a>
+							<a href="register.html">
+								<font color="white">注册</font>
+							</a>
+						</span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			<h1>用户登录</h1>
+			<br /><br />
+			<form>
+				<br>
+				<label for="username">用户名</label><br>
+				<input type="text" name="username" id="username" class="input" value="" placeholder="用户名"><br>
+				<label for="pwd">密码</label><br>
+				<input type="password" name="" id="pwd" class="input" value="" placeholder="密码">
+				<div class="checkbox">
+					<input type="checkbox" name="">
+					<span>记住密码</span>
+				</div>
+				<button type="submit" class="submit" onclick="submits(this)">登录</button>
+				<br>
+				<a href="index.html" class="left">返回首页</a>
+				<a href="register.html" class="right">注册账号</a>
+			</form>
+		</div>
+
+		<footer>
+			<div class="footer ">
+				<div class="all">
+					<div class="flogo">
+					</div>
+					<div class="fr">
+						<ul>
+							<p>广东佛冈</p>
+						</ul>
+						<ul>
+							<p>图片来源网络</p>
+						</ul>
+						<ul>
+							<p>快捷方便展示</p>
+						</ul>
+						<ul>
+							<p>内容全面</p>
+						</ul>
+					</div>
+					<div class="links">
+						<dl>
+							<dd><a href="#">联系我们</a></dd>
+							<dd><a href="#">电话：123-456-7890</a></dd>
+							<dd><a href="#">问卷调查</a></dd>
+							<dd><a href="#">献计献策</a></dd>
+						</dl>
+						<dl>
+							<dd><a href="#">服务指南</a></dd>
+							<dd><a href="#">详情介绍</a></dd>
+							<dd><a href="#">常见问题</a></dd>
+							<dd><a href="#">网站地图</a></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="flast">
+				<span>版权申明</span>
+				<span>&copy;王蕊 20220000614</span>
+			</div>
+		</footer>
+		<script>
+			function submits(btn) {
+				var userName = document.getElementById("username").value;
+				var pwd = document.getElementById("pwd").value;
+				console.log(userName)
+				if (userName == "admin" & amp; & amp; pwd == "admin") {
+					alert("用户名和密码正确，但是连接服务器失败！")
+				} else {
+					alert("用户名或密码不正确！");
+				}
+			};
+		</script>
+	</body>
+</html>

@@ -1,0 +1,208 @@
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body {
+	background-color: #F9F8F5;
+}
+.all {
+	width: 1440px;
+	margin: 0 auto;
+	
+}
+
+
+.logo {
+	position: relative;
+	/* 为绝对定位做准备 */
+	margin-left: 10px;
+	/* 根据需要调整左边距，以实现文字开头空两格 */
+	top: -35px;
+	bottom: -20px;
+	float: left;
+}
+
+.logo img {
+	max-width: 90%;
+	height: auto;
+	display: block;
+	height: 110px;
+	padding-top: 50px
+}
+
+
+/* head区域 */
+.head {
+	position: relative;
+	z-index: 100;
+	width: 100%;
+	background-color: #808000;
+	height: 90px;
+	line-height: 90px;
+	border-bottom: 1px solid #333030;
+	margin-bottom: 90px;
+}
+
+.head .nav {
+	float: left;
+	margin-left: 10px;
+	width: 735px;
+}
+
+
+.nav ul li {
+
+	float: left;
+	width: 80px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	font-size: 16px;
+	margin-top: 25px;
+
+}
+
+.nav ul li:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.nav ul li a {
+	color: #fff;
+}
+
+.nav ul li:nth-child(even) {
+	width: 1px;
+	height: 16px;
+	line-height: 90px;
+	background-color: #fff;
+	margin: 38px 15px 0;
+
+}
+
+.search-box form {
+	display: flex;
+}
+
+/* 放大输入框 */
+.search-box input[type="text"] {
+	padding: 10px 5px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	font-size: 15px;
+	width: 200px;
+	height: 5px;
+	background-color: #ffffeb;
+	border-color: #aaaa00;
+	border-width: 3px;
+	margin-top: 30px;
+}
+
+/* 放大按钮 */
+.search-box button {
+	padding: 3px 20px;
+	/* 这里我将按钮的padding增加到了15px 30px */
+	background-color: #aaaa00;
+	color: white;
+	border: none;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 15px;
+	margin-top: 30px;
+}
+
+/* 登录注册 */
+.login {
+	float: right;
+
+	width: 300px;
+	height: 90px;
+	line-height: 90px;
+}
+
+
+.login ul li {
+	float: left;
+	margin-left: 20px;
+	font-size: 16px;
+	color: #fff;
+}
+
+
+/* 轮播图 */
+.content {
+	text-align: center;
+}
+
+.content h2 {
+	font-size: 40px;
+	color: #972727;
+	margin: 45px 30px;
+	font-weight: 400;
+}
+
+/*尾部*/
+.footer {
+
+	height: 200px;
+	background-color: #000000;
+	color: #fff;
+	margin-top: 500px;
+	/*根据页面调整，最高位置竖向距离*/
+}
+
+.footer .flogo {
+	float: left;
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+.fr {
+	float: left;
+	margin-top: 50px;
+	width: 230px;
+	height: 120px;
+	margin-left: 100px;
+}
+
+.fr p {
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+
+.footer .links {
+	float: left;
+	margin-top: 50px;
+
+}
+
+.footer .links dl {
+	float: left;
+}
+
+.footer .links dl dd {
+	font-size: 16px;
+	margin-left: 100px;
+	margin-top: 5px;
+}
+
+.footer .links dl dd a {
+	color: #fff;
+}
+
+.footer .links dl dd a:hover {
+	color: #ffff7f;
+}
+
+.flast {
+	height: 50px;
+	text-align: center;
+	background-color: #000000;
+	line-height: 50px;
+	color: #fff;
+	border-top: 1px solid #fff;
+	font-size: 16px;
+}
